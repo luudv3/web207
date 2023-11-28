@@ -15,6 +15,25 @@
   ],
   "profile": {
     "name": "typicode"
-  }
-
+  },
+  "students":[
+    {
+      "ten": "Đặng Vũ Lưu",
+      "namsinh": 2004,
+      "chuyennganh": "CNTT",
+      "id": 1
+    },
+    {
+      "ten": "Luudv3",
+      "namsinh": 2004,
+      "chuyennganh": "CNTT",
+      "id": 2
+    },
+    {
+      "ten": "TT",
+      "namsinh": 2004,
+      "chuyennganh": "CNTT",
+      "id": 3
+    }
+  ]
 }

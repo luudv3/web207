@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-body">
+    <table class="table"> 
+        <thead>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Năm sinh</th>
+            <th>Chuyên ngành</th>
+            <th>Thao tác</th>
+        </thead>
+        <tr ng-repeat="item in listStudents">
+            <td>{{$index + 1}}</td>
+            <td>{{item.ten}}</td>
+            <td>{{item.namsinh}}</td>
+            <td>{{item.chuyennganh}}</td>
+        </tr>
+    </table>
+    </div>
+  </div>
