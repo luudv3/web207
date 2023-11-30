@@ -18,7 +18,7 @@
   },
   "students": [
     {
-      "ten": "Đặng Vũ Lưu 123 a",
+      "ten": "Đặng Vũ Lưu",
       "namsinh": 2004,
       "chuyennganh": "CNTT",
       "id": 1
@@ -36,9 +36,9 @@
       "id": 3
     },
     {
-      "ten": "aaaa",
-      "namsinh": "123",
-      "chuyennganh": "cntt",
+      "ten": "Quang Toản",
+      "namsinh": "2004",
+      "chuyennganh": "CNTT",
       "id": 4
     }
   ]

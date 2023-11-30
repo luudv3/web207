@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="js/angular.js"></script>
+
+</head>
+
+<body ng-app="myapp" >
+    <div ng-controller ="ctrl">
+        <form   action="">
+            <div class="form-group">
+                <label for="">Chiều dài</label>
+                <input ng-model="length" class="form-control" type="number">
+            </div>
+            <div class="form-group">
+                <label for="">Chiều rộng</label>
+                <input ng-model="width" class="form-control" type="number">
+            </div>
+            <div class="form-group">
+                <label for="">Diện tích</label>
+                <input  class="form-control" ng-bind="dt">
+            </div>
+            <div class="form-group">
+                <label for="">Chu vi</label>
+                <input  class="form-control" ng-bind="cv">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" ng-click="calculate()">Calculate</button>
+            </div>
+        </form>
+    </div>
+  
+    
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller("ctrl",function($scope){
+            $scope.calculate = function (){
+            var a = parseFloat($scope.length);
+            var b = parseFloat($scope.width);
+            $scope.dt = a*b;
+            $scope.cv = (a+b)*2;
+        }
+        })
+        
+    </script>
+  </form>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
