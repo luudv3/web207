@@ -4,7 +4,7 @@ window.ListStudentController = function($scope, $http){
     // Thực hiện call API
     // Link API
 
-    const apiStudents= "http://localhost:3000/students";
+    const apiStudents= "http://localhost:9999/students";
     function getData(){
         $http.get(apiStudents).then(function(response){
             console.log(response);

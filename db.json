@@ -16,9 +16,9 @@
   "profile": {
     "name": "typicode"
   },
-  "students":[
+  "students": [
     {
-      "ten": "Đặng Vũ Lưu",
+      "ten": "Đặng Vũ Lưu 123 a",
       "namsinh": 2004,
       "chuyennganh": "CNTT",
       "id": 1
@@ -34,6 +34,12 @@
       "namsinh": 2004,
       "chuyennganh": "CNTT",
       "id": 3
+    },
+    {
+      "ten": "aaaa",
+      "namsinh": "123",
+      "chuyennganh": "cntt",
+      "id": 4
     }
   ]
 }
